@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Semicolon C++ Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">;</span><span>Semicolon C++</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="activities.html">Activities</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page contact-layout">
+      <section class="page-hero">
+        <p class="eyebrow">Contact me</p>
+        <h1>Want to join the C++ workshop?</h1>
+        <p>Send a note with your name, experience level, and what you hope to learn. I will follow up with details about upcoming sessions.</p>
+        <div class="contact-card">
+          <h2>Good messages include</h2>
+          <ul class="clean-list">
+            <li>Your current coding experience.</li>
+            <li>Your preferred workshop time or format.</li>
+            <li>Any C++ topic you are nervous or curious about.</li>
+          </ul>
+          <p class="direct-email">Direct email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        </div>
+      </section>
+
+      <form class="contact-form" id="interest-form">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Experience level
+          <select name="experience" required>
+            <option value="">Choose one</option>
+            <option>No coding experience yet</option>
+            <option>Some coding, new to C++</option>
+            <option>Comfortable with basics</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="6" placeholder="Tell me what you want to learn or ask..." required></textarea>
+        </label>
+        <button class="button primary" type="submit">Send message</button>
+        <p class="form-note" id="form-note">This opens your email app with the message filled in.</p>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
